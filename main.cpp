@@ -435,10 +435,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		// デバッグテキストの表示
 #ifdef _DEBUG
 		ImGui::Begin("Window");
-		ImGui::DragFloat3("CameraTranslate", &cameraTranslate.x, 0.01f);
-		ImGui::DragFloat3("CameraRotate", &cameraRotate.x, 0.01f);
-		ImGui::DragFloat3("SphereCenter", &pointSphere.center.x, 0.01f);
-		ImGui::DragFloat("SphereRadius", &pointSphere.radius, 0.01f);
+		ImGui::DragFloat3("Point", &point.x, 0.01f);
+		ImGui::DragFloat3("Segment origin", &segment.origin.x, 0.01f);
+		ImGui::DragFloat3("Segment diff", &segment.diff.x, 0.01f);
+		ImGui::DragFloat3("Project", &project.x, 0.01f);
 		ImGui::End();
 #endif
 
